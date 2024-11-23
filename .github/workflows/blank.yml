@@ -28,6 +28,7 @@ jobs:
     - name: Download boot or recovery img
       run: |
         aria2c "${{ github.event.inputs.IMG_URL }}"
+        mv lcwpqv boot.img
         ls
       
     - name: Start build
